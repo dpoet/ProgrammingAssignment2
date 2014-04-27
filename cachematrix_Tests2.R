@@ -5,9 +5,9 @@ source("cachematrix.R")
 
 # Creates matrices A and B
 message("Matrix 'A':")
-A <- matrix(c(1:8, 1), 3, 3); A
+A <- matrix(rnorm(10000), 100, 100); A;
 message("Matrix 'B':")
-B <- matrix(c(10:3,10), 3, 3); B
+B <- matrix(rnorm(10000),100,100); B;
 
 # Creates a new structure via makeCacheMatrix and assigns it to 'm1'
 m1 <- makeCacheMatrix(A)
